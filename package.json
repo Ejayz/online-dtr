@@ -1,0 +1,35 @@
+{
+  "name": "online-dtr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.3.1",
+    "@supabase/supabase-js": "^2.36.0",
+    "@types/node": "20.6.3",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.16",
+    "dotenv": "^16.3.1",
+    "eslint": "8.50.0",
+    "eslint-config-next": "13.5.2",
+    "formik": "^2.4.5",
+    "next": "13.5.2",
+    "postcss": "8.4.30",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-toastify": "^9.1.3",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2",
+    "yup": "^1.3.0"
+  },
+  "devDependencies": {
+    "daisyui": "^3.7.7",
+    "prisma": "^5.3.1"
+  }
+}
