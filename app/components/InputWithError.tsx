@@ -10,6 +10,7 @@ type Props = {
   classes: string;
   errors: string | undefined;
   touched: undefined | boolean;
+  additionalStyle: string;
 };
 export default function InputWithError({
   componentName,
@@ -19,16 +20,20 @@ export default function InputWithError({
   classes,
   errors,
   touched,
+  additionalStyle,
 }: Props) {
+  console.log(errors, touched);
   return (
-    <div className="form-control">
+    <div className={`form-control ${additionalStyle}`}>
       <label className="label">
         <span className="label-text text-lg">{placeHolder}</span>
       </label>
       <Field
         type={componentType}
         placeholder={placeHolder}
-        className={` ${componentClassName} text-base-content`}
+        className={` ${componentClassName} ${
+          errors && touched ? "input-error" : "input-bordered"
+        } text-base-content`}
         name={componentName}
       />
       {errors && touched ? (

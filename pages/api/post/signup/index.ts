@@ -23,7 +23,6 @@ export default async function handler(
   const {
     email,
     password,
-    confirmPassword,
     username,
     student_name,
     school,
